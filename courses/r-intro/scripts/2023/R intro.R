@@ -10,7 +10,7 @@ my1_no2 = read.csv("courses/r-intro/data/taught/part_1/MY1_no2_2018.csv") |>
   tibble() |>
   mutate(date = ymd_hms(date, tz = "GMT"))
 
-my1_no3 = read.csv("courses/r-intro/data/taught/part_1/MY1_o3_2018.csv") |> 
+my1_o3 = read.csv("courses/r-intro/data/taught/part_1/MY1_o3_2018.csv") |> 
   tibble() |>
   mutate(date = ymd_hms(date, tz = "GMT"))
 
@@ -20,7 +20,7 @@ my1_met = read.csv("courses/r-intro/data/taught/part_1/MY1_met_2018.csv") |>
 
 my1 = my1_no |>
   left_join(my1_no2, by = "date") |>
-  left_join(my1_no3, by = "date") |>
+  left_join(my1_o3, by = "date") |>
   left_join(my1_met, by = "date")
 
 mean(my1$no, na.rm=TRUE)
