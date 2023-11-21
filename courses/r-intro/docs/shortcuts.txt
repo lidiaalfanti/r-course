@@ -7,3 +7,8 @@ Execute current line of code - Ctrl + Enter
 Find and Replace - Ctrl + Shift + f
 Autocomplete R object name - Tab (after having typed at least 1 character)
 Autocomplete file path - Tab (after having opened quotation marks)
+
+Insert arrow (<-) - alt + "-"
+pipe - ctrl + shift + m
+
+ctrl + shift + r - insert section
